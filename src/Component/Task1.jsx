@@ -63,9 +63,9 @@ const Task1 = () => {
 <span className='flex space-x-4 text-slate-100'> 
 
 
-<span className='relative'>
+<span className='relative' onClick={openCart}  >
               
-              <IoMdCart  onClick={openCart}   className='text-[1.8rem]
+              <IoMdCart   className='text-[1.8rem]
                text-slate-100 cursor-pointer'     />
             
             <span className='bg-red-500 top-0 pl-[6px] h-6 w-6 absolute rounded-full
@@ -78,7 +78,7 @@ const Task1 = () => {
 
 
 
-<RiMenu4Line onClick={openBar} className='text-[1.5rem] lg:hidden'   />
+<RiMenu4Line onClick={openBar} className='text-[1.8rem] lg:hidden'   />
 </span>
   </section>
   <div   className={`openMenu  w-full  top-[4rem]    ${openbar ? 'active' : ''} fixed
@@ -97,7 +97,7 @@ const Task1 = () => {
 
 {isCartOpen && (
         <div
-          className="bg-white min-h-[20rem] z-50 px-6 w-full absolute mb-[2rem] 
+          className="bg-white min-h-[20rem] z-50 px-6 w-full fixed mb-[2rem] 
           act"
          
         >

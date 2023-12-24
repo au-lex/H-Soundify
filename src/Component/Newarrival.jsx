@@ -60,14 +60,17 @@ const HeadphoneGallery = () => {
       </section>
 
       {selectedImage && (
-        <div className='fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75'>
+        <div className='fixed z-50 top-0 left-0 w-full h-full flex items-center
+         justify-center bg-black bg-opacity-75'>
           <div className='max-w-screen-lg w-full lg:w-[40%] mx-4 p-4 bg-white rounded-md relative'>
             <img src={selectedImage} alt='Enlarged' className='w-full h-auto lg:w-[400px]' />
-            <button className='absolute top-0 right-0 p-2 text-white' onClick={closeModal}>
+            <button className='absolute top-0 right-0 p-2 text-white'
+             onClick={closeModal}>
             <RiCloseCircleFill className='text-[2rem]  text-red-500' />
             </button>
             <button
-              className='bg-orange-500 text-white px-4 py-2 rounded-md absolute bottom-4 right-4'
+              className='bg-orange-500 text-white px-4 py-2 rounded-md absolute 
+              bottom-4 right-4'
               onClick={() => handleAddToCart(selectedProductId)}>
               Add to Cart
             </button>
