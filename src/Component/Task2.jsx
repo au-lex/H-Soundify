@@ -105,16 +105,7 @@ const Task2 = () => {
             <button className="type1">Browse</button>
           </div>
         </div>
-        {/* <div className="box box-5">
-          <div className="box-text-2">
-            <p>Play</p>
-            <div>
-              <h2>Game</h2>
-            </div>
-            <h1 className="oculus">OCULUS</h1>
-            <button className="type2">Browse</button>
-          </div>
-        </div> */}
+       
         <div className="box box-6">
           <div className="box-text-3">
             <p>New</p>
@@ -135,22 +126,22 @@ const Task2 = () => {
 
       <div className="icon-container ">
         <div className="icon border-2 w-full shadow-md py-4 rounded-[10px]">
-          <img src="images/Icons/icons8-delivery-truck-96.png" alt="icon1" />
+          <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391057/FOOD_APP/HEADPHONE/Icons/icons8-delivery-truck-96_x0ntam.png" alt="icon1" />
           <h5>Free Shipping</h5>
           <p>Free shipping On All Order</p>
         </div>
         <div className="icon w-full  border-2 shadow-md py-4 rounded-[10px]">
-          <img src="images/Icons/icons8-badge-80.png" alt="Icon2" />
+          <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391057/FOOD_APP/HEADPHONE/Icons/icons8-badge-80_wzeut1.png" alt="Icon2" />
           <h5>Money Guarantee</h5>
           <p>30 Day Money Back</p>
         </div>
         <div className="icon w-full  border-2 shadow-md py-4 rounded-[10px]">
-          <img src="images/Icons/icons8-support-80.png" alt="Icon3" />
+          <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391059/FOOD_APP/HEADPHONE/Icons/icons8-support-80_f2iqvv.png" alt="Icon3" />
           <h5>Online Support 24/7</h5>
           <p>Technical Support 24/7</p>
         </div>
         <div className="icon  w-full border-2 shadow-md py-4 rounded-[10px]">
-          <img src="images/Icons/icons8-payment-100.png" alt="Icon4" />
+          <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391057/FOOD_APP/HEADPHONE/Icons/icons8-payment-100_wtl0k0.png" alt="Icon4" />
           <h5>Secure Payment</h5>
           <p>All Cards Accepted</p>
         </div>
