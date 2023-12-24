@@ -136,25 +136,25 @@ const Task2 = () => {
 
       <div className="icon-container ">
         <div data-aos="fade-up"  className="icon border-2 w-full
-         shadow-xl py-4 rounded-[10px]">
+         shadow-sm py-4 rounded-[10px]">
           <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391057/FOOD_APP/HEADPHONE/Icons/icons8-delivery-truck-96_x0ntam.png" alt="icon1" />
           <h5>Free Shipping</h5>
           <p>Free shipping On All Order</p>
         </div>
         <div data-aos="fade-up"  className="icon w-full  border-2 
-        shadow-xl py-4 rounded-[10px]">
+        shadow-sm py-4 rounded-[10px]">
           <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391057/FOOD_APP/HEADPHONE/Icons/icons8-badge-80_wzeut1.png" alt="Icon2" />
           <h5>Money Guarantee</h5>
           <p>30 Day Money Back</p>
         </div>
         <div  data-aos="fade-up"  className="icon w-full  
-        border-2 shadow-xl py-4 rounded-[10px]">
+        border-2 shadow-sm py-4 rounded-[10px]">
           <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391059/FOOD_APP/HEADPHONE/Icons/icons8-support-80_f2iqvv.png" alt="Icon3" />
           <h5>Online Support 24/7</h5>
           <p>Technical Support 24/7</p>
         </div>
         <div data-aos="fade-up"  className="icon  w-full border-2 
-        shadow-xl py-4 rounded-[10px]">
+        shadow-sm py-4 rounded-[10px]">
           <img src="https://res.cloudinary.com/durbee4ln/image/upload/v1703391057/FOOD_APP/HEADPHONE/Icons/icons8-payment-100_wtl0k0.png" alt="Icon4" />
           <h5>Secure Payment</h5>
           <p>All Cards Accepted</p>
