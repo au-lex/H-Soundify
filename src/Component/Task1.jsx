@@ -24,6 +24,12 @@ const Task1 = () => {
     'https://res.cloudinary.com/durbee4ln/image/upload/v1703245861/FOOD_APP/HEADPHONE/headphones_c_1_xgnsry.webp',
   ];
 
+  const [isCartOpen, setIsCartOpen] = useState(false);
+    const openCart = () => {
+        setIsCartOpen(!isCartOpen);
+      };
+ 
+
   const [openbar, setOpenBar] = useState(false)
   const [selectedImage, setSelectedImage] = useState(smallImages[0]);
 
@@ -56,7 +62,22 @@ const Task1 = () => {
 </ol>
 <span className='flex space-x-4 text-slate-100'> 
 
-< IoMdCart className='text-[1.5rem]' />
+
+<span className='relative'>
+              
+              <IoMdCart  onClick={openCart}   className='text-[1.8rem]
+               text-slate-100 cursor-pointer'     />
+            
+            <span className='bg-red-500 top-0 pl-[6px] h-6 w-6 absolute rounded-full
+             left-[-.8rem] text-white text-[14px]'>
+             2
+            </span>
+            </span>
+
+
+
+
+
 <RiMenu4Line onClick={openBar} className='text-[1.5rem] lg:hidden'   />
 </span>
   </section>
@@ -74,6 +95,17 @@ const Task1 = () => {
   
 </div>
 
+{isCartOpen && (
+        <div
+          className="bg-white min-h-[20rem] z-50 px-6 w-full absolute mb-[2rem] 
+          act"
+         
+        >
+          {/* Your cart content */}
+          <h1>Cart</h1>
+          <p>No items in the cart</p>
+        </div>
+      )}
   <section className='hero h-[100vh]  my:h-[140vh] mt-[4rem] flex  pt-[4rem] flex-wrap  lg:h-[100vh] lg:flex-nowrap
    justify-center lg:px-[4rem] px-[1rem]   '>
    
