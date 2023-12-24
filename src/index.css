@@ -145,7 +145,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px;
+ margin: 1.5rem 0;
 }
 p{
   color: #6e6a6a;

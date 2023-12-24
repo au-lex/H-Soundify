@@ -20,15 +20,28 @@
 .openMenu {
 
 height: 20rem;
-visibility: hidden;
 background-color: rgb(109, 109, 114);
 transition: .3s ease-in;
-opacity: 0;
+top: -40rem;
+
+backdrop-filter: blur(30px);
 }
 
+.act  {
+
+   
+    transition: .3s ease-in;
+
+    
+    backdrop-filter: blur(30px);
+    }
+
+
+
+
 .openMenu.active {
-    background-color: rgb(109, 109, 114);
+    background-color: rgba(0, 0,0,0.6);
     height: 20rem;
-    visibility: visible;
-    opacity: 1;
+    top: 4rem;
+   
     }
