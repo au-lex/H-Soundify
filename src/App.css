@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero {
+
+    background-color:#1E1E1E;
+    }
+
+    .u {
+
+        background-color:#1E1E1E;
+        }
+    
+
+
+
+
+.openMenu {
+
+height: 20rem;
+visibility: hidden;
+background-color: rgb(109, 109, 114);
+transition: .3s ease-in;
+opacity: 0;
+}
+
+.openMenu.active {
+    background-color: rgb(109, 109, 114);
+    height: 20rem;
+    visibility: visible;
+    opacity: 1;
+    }

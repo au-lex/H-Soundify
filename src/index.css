@@ -1,0 +1,245 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 20px; */
+  /* justify-content: space-between; */
+  gap: 2rem;
+  height: 300px;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 300px;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* margin: 10px; */
+  text-align: left;
+  border-radius: 10px;
+}
+
+.box-1 {
+  flex-basis: 33.33%;
+  background-color: #000; 
+  background-image: url(images/New_Bone_conduction_Bluetooth_headset_mini_ear_hook_style_sports_business_headset-removebg-preview-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.box-2 {
+  flex-basis: 33.33%;
+  background-color: rgb(255, 235, 60);
+  background-image: url(images/Silicone_Watchband_Compatible_With_Apple_Watch-removebg-preview-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.box-3 {
+  flex-basis: 66.66%;
+  background-color: red;
+  background-image: url(images/Free\ Macbook\ Pro\ with\ iPhone\ 11\ PSD\ Mockup-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #fff;
+} */
+h2 {
+  color: #fff;
+}
+h1.earphone {
+  color: #6e6a6a
+}
+h1.galaxy {
+  color: #e9d41d;
+}
+h1.laptop {
+  color: rgb(206, 155, 155);
+}
+h1.console {
+  color: white;
+}
+h1.oculus {
+  color: #6ae66e;
+}
+h1.speaker {
+  color: #7e90fa;
+}
+button.type1 {
+  width: 35%;
+  margin: 20px 0;
+  border: 7px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+}
+button.type2 {
+  width: 35%;
+  margin: 20px 0;
+  border: 7px solid white;
+  background-color: white;
+  color: red;
+  border-radius: 15px;
+}
+button:hover {
+  cursor: pointer;
+}
+.box-4 {
+  flex-basis: 66.66%;
+  background-color: rgb(210, 208, 209); 
+  background-image: url(images/Sony\ PlayStation\ 4\ 500GB\ White\ Console\ for\ sale\ online\ _\ eBay-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.box-5 {
+  flex-basis: 33.33%;
+  background-color: #298d2d; 
+  background-image: url(images/Download_premium_png_of_Man_playing_game_with_VR_headset_and_controller_virtual_reality_experience_by_kanate_about_gaming__game__mobile_gaming__gamer__and_vr_2801287-removebg-preview-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.box-6 {
+  flex-basis: 33.33%;
+  background-color: #3f51b5; 
+  background-image: url(images/Treblab_Hd7_-_Portable_Bluetooth_Speaker_Black-removebg-preview-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.icon-container {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  /* margin: 10px red solid; */
+  padding: 10px;
+
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+p{
+  color: #6e6a6a;
+}
+.icon p {
+  margin-top: 5px;
+  text-align: center;
+}
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 42, 42);
+  background-image: url(images/Beats\ Solo\ Pro\ Wireless\ Noise\ Cancelling\ Headphones\ -\ Black-removebg-preview.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+.text-left, .text-right {
+  flex: 1;
+  text-align: center;
+}
+.text-left {
+  margin-left: 70px;
+  text-align: left;
+}
+.text-left h1 {
+  font-size: 72px;
+  color: white;
+}
+.text-right {
+  text-align: left;
+  margin-left: 350px;
+}
+.text-right h4 {
+  color: #333;
+}
+
+.text-left p, .text-right p, .text-right h4  {
+  color: rgba(237, 236, 236, 0.845);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container-1,
+  .container-2,
+  .icon-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .box-1,
+  .box-2,
+  .box-3 {
+    flex-basis: 100%;
+    background-position: center;
+  }
+    .container-3{
+      flex-direction: column;
+      margin: 10px;
+      margin-bottom: 50px;
+    }
+    
+    .text-left, .text-right {
+      margin: 0;
+      text-align: center;
+    }
+    
+    .text-left {
+      margin-left: 0;
+      text-align: center;
+    }
+    
+    .text-left h1 {
+      font-size: 48px;
+    }
+    
+    .text-right {
+      margin-left: 0;
+    }
+    
+    .text-right h4 {
+      font-size: 16px;
+    }
+    
+    .text-left p, .text-right p, .text-right h4 {
+      color: rgba(237, 236, 236, 0.845);
+  }
+}
+
+
+
+
+
