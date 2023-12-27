@@ -39,7 +39,8 @@ const HeadphoneGallery = ( {prod, addToCart }) => {
 
       <section className="flex flex-wrap justify-center">
         {headphones.map((headphone) => (
-          <div key={headphone.id} data-aos="fade-up" className="mx-4 my-4 w-[40%] bg-slate-50 pb-4 shadow-2xl md:w-[48%] lg:w-[48%] xl:w-[200px]">
+          <div key={headphone.id} data-aos="fade-up" className="mx-4 my-4 w-[40%]
+           bg-slate-50 pb-4 shadow-2xl md:w-[28%] lg:w-[48%] xl:w-[200px]">
             <div className="relative rounded-[10px]">
               <img
                 src={headphone.imgUrl}
@@ -72,7 +73,7 @@ const HeadphoneGallery = ( {prod, addToCart }) => {
       {selectedImage && (
         <div className="fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center
          bg-black bg-opacity-75 transition-opacity duration-800">
-          <div className="max-w-screen-lg w-full lg:w-[40%] mx-4 p-4 bg-white rounded-md relative">
+          <div className="max-w-screen-lg w-full lg:w-[40%] md:w-[40%] mx-4 p-4 bg-white rounded-md relative">
             <img src={selectedImage} data-aos="fade-up" alt="Enlarged" className="w-full h-auto lg:w-[400px]" />
             <button className="absolute top-0 right-0 p-2 text-white" onClick={closeModal}>
               <RiCloseCircleFill className="text-[2rem] text-red-500" />

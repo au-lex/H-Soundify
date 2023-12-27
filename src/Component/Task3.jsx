@@ -45,7 +45,7 @@ const Task3 = ({ product, addToCart }) => {
     return (
       <div data-aos="fade-up" 
         className="fxtCon lg:w-[18%] w-[40%] my-4 pb-4 
-        border border-gray-300  rounded-[10px] mx-2
+        border border-gray-300 shadow-2xl  rounded-[10px] mx-2
          overflow-hidden transition-transform transform hover:scale-105 relative"
         key={idx}
       >
@@ -93,7 +93,7 @@ const Task3 = ({ product, addToCart }) => {
       {selectedImage && (
         <div className="fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center
          bg-black bg-opacity-75 transition-opacity duration-800">
-          <div className="max-w-screen-lg w-full lg:w-[40%] mx-4 p-4 bg-white rounded-md relative">
+          <div className="max-w-screen-lg w-full lg:w-[40%] md:w-[40%] mx-4 p-4 bg-white rounded-md relative">
             <img src={selectedImage} data-aos="fade-up" alt="Enlarged" className="w-full h-auto lg:w-[400px]" />
             <button className="absolute top-0 right-0 p-2 text-white" onClick={closeModal}>
               <RiCloseCircleFill className="text-[2rem] text-red-500" />
