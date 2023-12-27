@@ -65,7 +65,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
  text-red-600 mr-4' /></span>Soundify</div>
 
  
-<ol className=' text-slate-200  px-4 space-x-14 hidden lg:flex '>
+<ol className=' text-slate-200  px-4 space-x-14 md:space-x-8 hidden lg:flex md:flex '>
   <li className='mb-[1rem] py-2'>Home</li>
   <li className='mb-[1rem] py-2 '>Product</li>
   <li className='mb-[1rem] py-2 '>About us</li>
@@ -89,10 +89,10 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
 
 
-<RiMenu4Line onClick={openBar} className='text-[1.8rem] lg:hidden'   />
+<RiMenu4Line onClick={openBar} className='text-[1.8rem] lg:hidden md:hidden'   />
 </span>
   </section>
-  <div   className={`openMenu  w-full  top-[4rem]    ${openbar ? 'active' : ''} fixed
+  <div   className={`openMenu  w-full  top-[4rem]  lg:hidden md:hidden   ${openbar ? 'active' : ''} fixed
    right-0 z-50`}>
 
 <ol className=' pt-[3rem] text-slate-200 text-center px-4 '>
@@ -181,13 +181,15 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
         </div>
       )}
-  <section className='hero h-[100vh]  my:h-[140vh] mt-[4rem] flex  pt-[4rem] flex-wrap  lg:h-[100vh] lg:flex-nowrap
-   justify-center lg:px-[4rem] px-[1rem]   '>
+  <section className='hero h-[100vh]  my:h-[140vh] mt-[4rem] flex 
+   pt-[4rem] flex-wrap  lg:h-[100vh] lg:flex-nowrap md:flex-
+   justify-center lg:px-[4rem] px-[1rem]  md:px-[1rem]  '>
    
 
 
    
-<div className='  lg:w-[400px] lg:h-[200px] w-[400px]  rounded-full -order-1  lg:order-1 '>
+<div className='  lg:w-[400px] lg:h-[200px] md:w-[500px] md:h-[400px] w-[400px] 
+ rounded-full -order-1  lg:order-1 '>
 
 <img src={selectedImage} data-aos="fade-up" className='transition duration-300 ' alt="" />
 
@@ -208,7 +210,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
       ))}
       </div>
    
-<div className='   lg:hidden ' >
+<div className='   lg:hidden  md:hidden' >
 
 <h3 className='text-[2rem] font-bold leading-[90px] text-slate-100 mt-[2rem]'>
 
@@ -234,9 +236,10 @@ BOAT Rockerz 370
 <section className=' lg:mt-[1.5rem]  '>
  {/* lg */}
 
-    <div className='  lg:w-[60%] hidden lg:block ' >
+    <div className='  lg:w-[60%] hidden lg:block md:block ' >
 
-<h3 className='text-[5rem] font-bold leading-[90px] lg:mb-[1rem] text-slate-100 mt-[2rem]'>
+<h3 className='text-[5rem] md:text-[3rem] font-bold leading-[90px]
+ lg:mb-[1rem] text-slate-100 mt-[2rem]'>
 
 
 BOAT Rockerz 370
