@@ -6,7 +6,10 @@ import heroimg from '../Component/image 1.png'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const Task1 = () => {
+import CartItems from './CartItems';
+
+const Task1 = ({cart, total,  removeFromCart}) => {
+
 
   useEffect(() => {
     AOS.init({
@@ -68,9 +71,9 @@ const Task1 = () => {
               <IoMdCart   className='text-[1.8rem]
                text-slate-100 cursor-pointer'     />
             
-            <span className='bg-red-500 top-0 pl-[6px] h-6 w-6 absolute rounded-full
+            <span className='bg-red-500 top-0 pl-[8px] pt-[.5px] h-6 w-6 absolute rounded-full
              left-[-.8rem] text-white text-[14px]'>
-             2
+             {cart.length}
             </span>
             </span>
 
@@ -101,9 +104,47 @@ const Task1 = () => {
           act"
          
         >
-          {/* Your cart content */}
-          <h1>Cart</h1>
-          <p>No items in the cart</p>
+            <div className="bg-white rounded p-6 shadow-md mb-4">
+      <h1 className="text-2xl font-semibold mb-4">Your Cart</h1>
+
+      {cart.length === 0 ? (
+        <p className="text-gray-500">No items in the cart</p>
+      ) : (
+        <ul className="space-y-4">
+          {cart.map((item, index) => (
+            <li
+              key={index}
+              className="flex items-center justify-between border-b border-gray-200 py-4"
+            >
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0 w-16 h-16">
+                  <img
+                    src={item.imgUrl}
+                    alt={item.name}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold">{item.name}</h3>
+                  <p className="text-gray-500">${item.price.toFixed(2)}</p>
+                </div>
+              </div>
+              <button
+                onClick={() => removeFromCart(index)}
+                className="text-white bg-red-500 px-3 py-1 rounded"
+              >
+                Remove
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {cart.length > 0 && (
+        <p className="text-lg font-bold mt-4">Total: ${total.toFixed(2)}</p>
+      )}
+    </div>
+
         </div>
       )}
   <section className='hero h-[100vh]  my:h-[140vh] mt-[4rem] flex  pt-[4rem] flex-wrap  lg:h-[100vh] lg:flex-nowrap
