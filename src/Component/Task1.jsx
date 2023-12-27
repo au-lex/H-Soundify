@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import { FaHeadphonesAlt } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 import { RiMenu4Line } from "react-icons/ri";
+import { RiCloseCircleFill } from 'react-icons/ri';
 import heroimg from '../Component/image 1.png'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CartItems from './CartItems';
 
-const Task1 = ({cart, total,  removeFromCart}) => {
+
+const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity }) => {
 
 
   useEffect(() => {
@@ -104,7 +105,7 @@ const Task1 = ({cart, total,  removeFromCart}) => {
           act"
          
         >
-            <div className="bg-white rounded p-6 shadow-md mb-4">
+   <div className=''>
       <h1 className="text-2xl font-semibold mb-4">Your Cart</h1>
 
       {cart.length === 0 ? (
@@ -125,15 +126,30 @@ const Task1 = ({cart, total,  removeFromCart}) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">{item.name}</h3>
+                  <h3 className="text-[12px] font-meduim">{item.name}</h3>
                   <p className="text-gray-500">${item.price.toFixed(2)}</p>
                 </div>
               </div>
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={() => decreaseQuantity(index)}
+                  className="text-gray-500 px-2 py-1 border border-gray-300 rounded"
+                >
+                  -
+                </button>
+                <span className="font-semibold">{item.quantity}</span>
+                <button
+                  onClick={() => increaseQuantity(index)}
+                  className="text-gray-500 px-2 py-1 border border-gray-300 rounded"
+                >
+                  +
+                </button>
+              </div>
               <button
                 onClick={() => removeFromCart(index)}
-                className="text-white bg-red-500 px-3 py-1 rounded"
+              
               >
-                Remove
+                   <RiCloseCircleFill className="text-[2rem]  text-red-500" />
               </button>
             </li>
           ))}

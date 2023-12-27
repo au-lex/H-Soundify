@@ -76,12 +76,12 @@ const HeadphoneGallery = ( {prod, addToCart }) => {
             <button  className="absolute top-0 right-0 p-2 text-white" onClick={closeModal}>
               <RiCloseCircleFill className="text-[2rem]  text-red-500" />
             </button>
-            <button  onClick={() => addToCart(selectedImage)}
+            {/* <button  onClick={() => addToCart(selectedImage)}
               className="bg-orange-500 text-white px-4 py-2 rounded-md absolute bottom-4 right-4"
             
             >
               Add to Cart
-            </button>
+            </button> */}
           </div>
         </div>
       )}
