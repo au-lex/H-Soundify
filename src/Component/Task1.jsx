@@ -36,14 +36,21 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
   const [openbar, setOpenBar] = useState(false)
   const [selectedImage, setSelectedImage] = useState(smallImages[0]);
+  const [showBigImage, setShowBigImage] = useState(false);
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
+    setShowBigImage(true);
+  };
+
+  const handleBigImageClose = () => {
+    setShowBigImage(false);
   };
 
   const openBar = () => {
     setOpenBar(!openbar);
   }
+
   return (
     <>
 
@@ -101,12 +108,12 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
 {isCartOpen && (
         <div
-          className="bg-white min-h-[20rem] z-50 px-6 w-full fixed mb-[2rem] 
+          className="bg-red-50 min-h-[20rem]  z-50 px-6 w-full fixed mb-[2rem] 
           act"
          
         >
    <div className=''>
-      <h1 className="text-2xl font-semibold mb-4">Your Cart</h1>
+      <h1 className="text-xl font-meduim pt-4 mb-4">My Cart</h1>
 
       {cart.length === 0 ? (
         <p className="text-gray-500">No items in the cart</p>
@@ -153,12 +160,23 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
               </button>
             </li>
           ))}
+
+{cart.length > 0 && (
+        <p className="text-lg font-bold mt-4">Total: ${total.toFixed(2)}</p>
+
+      )}
+       <div className="btnn pb-[2rem]">
+  <button className="bg-orange-500 rounded-[10px] text-white w-full p-3 transition duration-300 ease-in-out hover:bg-orange-700">
+    Checkout
+  </button>
+</div>
+
         </ul>
       )}
 
-      {cart.length > 0 && (
-        <p className="text-lg font-bold mt-4">Total: ${total.toFixed(2)}</p>
-      )}
+     
+
+      
     </div>
 
         </div>
@@ -170,7 +188,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
    
 <div className='  lg:w-[400px] lg:h-[200px] w-[400px]  rounded-full -order-1  lg:order-1 '>
-{/* <img src={heroimg} alt="" /> */}
+
 <img src={selectedImage} data-aos="fade-up" className='transition duration-300 ' alt="" />
 
 
@@ -181,7 +199,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
           className="w-[4rem] h-[4rem] border-2 rounded-[10px] outline-none border-red-100"
         >
           <img 
-            src={image}
+            src={image} 
             alt={`Small Image ${index + 1}`}
             onClick={() => handleImageClick(image)}
             // onClick={() => handleImageClick(image)}
@@ -237,35 +255,7 @@ BOAT Rockerz 370
     </div>
 </section>
   </section>
-{/* <section className="hero bg-red-500 w-full  ">
-  <nav className='fixed  bg-slate-200   h-[6rem] backdrop-blur-lg opacity-80 top-0  w-full flex justify-between px-[4rem] py-[1rem]'>
 
-
-<div className="logo flex text-[2rem]"><span> <FaHeadphonesAlt className='text-[3rem] text-rose-500 mr-4' /></span>Soundify</div>
-
-<ol className='flex space-x-28 pt-[1rem] font-semibold'>
-  <li>Home</li>
-  <li>Product</li>
-  <li>About us</li>
-  <li>Contact us</li>
-</ol>
-
-<div>
-  < IoMdCart size={32}/>
-</div>
-
-  </nav>
-  <div className='mt-[6rem] relative'>
-    <div className="desc absolute">
-      <p>* Starting price $120.00</p>
-<h1>
-PORTABLE
-WIRELESS</h1>
-    </div>
-    <img src="https://fullkit.moxcreative.com/audioplus/wp-content/uploads/sites/25/2023/07/img_7.png" alt="" />
-    {/* <img src="https://electon6-store.myshopify.com/cdn/shop/files/slider-1.jpg?v=1650691565" alt="" /> */}
-  {/* </div> */}
-{/* </section>  */}
 
 
     
