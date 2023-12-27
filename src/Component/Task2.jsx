@@ -16,7 +16,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-
 const Task2 = () => {
   useEffect(() => {
     AOS.init({
@@ -82,6 +81,7 @@ const Task2 = () => {
 
 
       <div className="box box-1">
+       
           <div className="box-text-1">
             <p>Enjoy</p>
             <h2>With</h2>

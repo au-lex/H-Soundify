@@ -6,7 +6,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Task3 = () => {
+const Task3 = ({ product, addToCart }) => {
+  // console.log(product);
   useEffect(() => {
     AOS.init({
       duration: 800, // Animation duration
@@ -64,7 +65,7 @@ const Task3 = () => {
               </div>
               <p className='text-sm font-bold'>${fxt.price}</p>
             </div>
-            <FaShoppingBag className='text-red-500 text-[1.2rem]' />
+            <FaShoppingBag   onClick={() => addToCart(fxt)} className='text-red-500 text-[1.2rem]' />
           </div>
           <p className='mt-0 text-sm'>{fxt.name}</p>
         </div>
