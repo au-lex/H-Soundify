@@ -1,43 +1,45 @@
-// Footer.js
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto flex flex-wrap justify-between">
-        <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
-          <h2 className="text-xl  mb-2">Connect With Us</h2>
-          <p>Email: info@headphones.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
+    <footer className="bg-gray-900 text-white py-12 px-6">
+      <div className="container  flex flex-col lg:flex-row justify-between
+       ">
+        <div className="mb-[4rem] lg:mb-0">
+          <h2 className="text-xl font-meduim  mb-2">Connect With Us</h2>
+          <p className="text-gray-400">Email: info@headphones.com</p>
+          <p className="text-gray-400">Phone: +1 (555) 123-4567</p>
         </div>
-        <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
-          <h2 className="  mb-1">Quick Links</h2>
-          <ul>
+
+        <div className="mb-2 lg:mb-0">
+          <h2 className="text-xl font-meduim mb-2">Quick Links</h2>
+          <ul className="list-none">
             <li>
-              <a href="#home" className="hover:text-blue-500">
+              <a href="#home" className="text-gray-400 hover:text-blue-500">
                 Home
               </a>
             </li>
             <li>
-              <a href="#products" className="hover:text-blue-500">
+              <a href="#products" className="text-gray-400 hover:text-blue-500">
                 Products
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-blue-500">
+              <a href="#about" className="text-gray-400 hover:text-blue-500">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-blue-500">
+              <a href="#contact" className="text-gray-400 hover:text-blue-500">
                 Contact
               </a>
             </li>
           </ul>
         </div>
-        <div className="w-full lg:w-1/3">
-          <h2 className=" ">Follow Us</h2>
+
+        <div className="flex  lg:items-start">
+
           <div className="flex space-x-4">
             <a href="#" className="text-xl hover:text-blue-500">
               <FaFacebook />
@@ -51,15 +53,27 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 text-center">
-        <div className="mb-4">
-          <h2 className="text-xl  mb-2">Subscribe to Our Newsletter</h2>
+
+      <div className="mt-[3.8rem] text-center">
+        <div className="mb-2">
+          <h2 className="text-xl font-meduim mb-2">Subscribe to Our Newsletter</h2>
           <p className="text-gray-400">Get updates on the latest headphones and promotions.</p>
         </div>
-  
+        <div className="flex flex-wrap lg:flex-nowrap lg:mt-[2rem]  lg:justify-center ">
+          <input
+            type="email"
+            placeholder="Your email address"
+            className="py-2 px-4  w-full lg:mr-[2rem] text-gray-900  rounded-md  lg:w-[60%] focus:outline-none mb-4"
+          />
+          <button className="bg-blue-500 text-white py-2 lg:py-0 lg:h-[45px] px-6 
+          rounded-md hover:bg-blue-600 focus:outline-none">
+            Subscribe
+          </button>
+        </div>
       </div>
-      <div className="mt-8 text-center">
-        <p>&copy; 2023 Headphones Inc. All rights reserved.</p>
+
+      <div className="mt-12 text-center">
+        <p className="text-gray-400">&copy; 2023 Headphones Inc. All rights reserved.</p>
       </div>
     </footer>
   );
