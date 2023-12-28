@@ -22,7 +22,8 @@
 height: 20rem;
 background-color: rgb(109, 109, 114);
 transition: .3s ease-in;
-right: -40rem;
+right: -400rem;
+
 
 
 backdrop-filter: blur(30px);
@@ -47,3 +48,8 @@ backdrop-filter: blur(30px);
 
    
     }
+
+
+
+
+  
