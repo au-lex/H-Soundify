@@ -45,7 +45,7 @@ const Task3 = ({ product, addToCart }) => {
     return (
       <div data-aos="fade-up" 
         className="fxtCon lg:w-[18%] w-[40%] my-4 pb-4 
-        border border-gray-300 shadow-2xl  rounded-[10px] mx-2
+         border-gray-300 shadow-2xl  rounded-[10px] mx-2
          overflow-hidden transition-transform transform hover:scale-105 relative"
         key={idx}
       >

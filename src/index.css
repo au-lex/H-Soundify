@@ -40,7 +40,7 @@ body {
 .box-1 {
   flex-basis: 33.33%;
   background-color: #000; 
-  background-image: url(images/New_Bone_conduction_Bluetooth_headset_mini_ear_hook_style_sports_business_headset-removebg-preview-removebg-preview.jpg);
+  background-image: url('https://res.cloudinary.com/durbee4ln/image/upload/v1703742234/FOOD_APP/New_Bone_conduction_Bluetooth_headset_mini_ear_hook_style_sports_business_headset-removebg-preview-removebg-preview_n74hjx.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -49,7 +49,7 @@ body {
 .box-2 {
   flex-basis: 33.33%;
   background-color: rgb(255, 235, 60);
-  background-image: url(images/Silicone_Watchband_Compatible_With_Apple_Watch-removebg-preview-removebg-preview.jpg);
+  background-image: url('https://res.cloudinary.com/durbee4ln/image/upload/v1703742257/FOOD_APP/Silicone_Watchband_Compatible_With_Apple_Watch-removebg-preview-removebg-preview_wjv43n.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -58,7 +58,7 @@ body {
 .box-3 {
   flex-basis: 66.66%;
   background-color: red;
-  background-image: url(images/Free\ Macbook\ Pro\ with\ iPhone\ 11\ PSD\ Mockup-removebg-preview.jpg);
+  background-image: url('https://res.cloudinary.com/durbee4ln/image/upload/v1703742372/FOOD_APP/Free_Macbook_Pro_with_iPhone_11_PSD_Mockup-removebg-preview_z2yig0.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -112,7 +112,7 @@ button:hover {
 .box-4 {
   flex-basis: 66.66%;
   background-color: rgb(210, 208, 209); 
-  background-image: url(images/Sony\ PlayStation\ 4\ 500GB\ White\ Console\ for\ sale\ online\ _\ eBay-removebg-preview.jpg);
+  background-image: url('https://res.cloudinary.com/durbee4ln/image/upload/v1703742280/FOOD_APP/Sony_PlayStation_4_500GB_White_Console_for_sale_online___eBay_x22cwd.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -128,7 +128,7 @@ button:hover {
 .box-6 {
   flex-basis: 33.33%;
   background-color: #3f51b5; 
-  background-image: url(images/Treblab_Hd7_-_Portable_Bluetooth_Speaker_Black-removebg-preview-removebg-preview.jpg);
+  background-image: url('https://res.cloudinary.com/durbee4ln/image/upload/v1703742193/FOOD_APP/Treblab_Hd7_-_Portable_Bluetooth_Speaker_Black-removebg-preview-removebg-preview_rhrrqy.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;

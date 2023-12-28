@@ -31,3 +31,88 @@ const ShoppingCart = ({ cart }) => {
 };
 
 export default ShoppingCart;
+
+
+  <section className='hero mg:h-[110vh] min-h-[100vh]    md:min-h-[150vh]    mc:h-[150vh]     my:h-[140vh] mt-[4rem] flex 
+   pt-[4rem] flex-wrap  lg:h-[100vh] lg:flex-nowrap md:flex-
+   justify-center lg:px-[4rem] px-[1rem]  md:px-[1rem]  '>
+   
+
+
+   
+<div className='  lg:w-[400px] lg:h-[200px] md:w-[500px] md:h-[400px] w-[400px] 
+ rounded-full -order-1  lg:order-1 '>
+
+<img src={selectedImage} data-aos="fade-up" className='transition duration-300 ' alt="" />
+
+
+<div className="smallimg flex space-x-4 justify-center">
+      {smallImages.map((image, index) => (
+        <div
+          key={index}
+          className="w-[4rem] h-[4rem] border-2 rounded-[10px] outline-none border-red-100"
+        >
+          <img 
+            src={image} 
+            alt={`Small Image ${index + 1}`}
+            onClick={() => handleImageClick(image)}
+            // onClick={() => handleImageClick(image)}
+          />
+        </div>
+      ))}
+      </div>
+   
+<div className='   lg:hidden  md:hidden' >
+
+<h3 className='text-[2rem] font-bold leading-[90px] text-slate-100 mt-[2rem]'>
+
+
+BOAT Rockerz 370
+</h3>
+<div className=' text-slate-100 '>wireless preminum noise cancellation</div>
+<div className=' text-slate-100 '> Welcome to <span className='text-rose-400 text-[20px]'>Soundify</span> 
+ Where Every Beat Counts! Immerse Yourself in Pure Audio Bliss with Our Premium Headphones.
+</div>
+<span className='flex space-x-10 mb-[4rem]'>
+<button className=' w-[60%] bg-red-600 text-slate-100 py-3 rounded-[10px] mt-4'> Shop now</button>
+<button className='w-[60%] border-red-500 border text-slate-100 py-3 rounded-[10px] mt-4'> Explore now</button>
+</span>
+
+    </div>
+
+   
+</div>
+  
+
+
+<section className=' lg:mt-[1.5rem]  '>
+ {/* lg */}
+
+    <div className='  lg:w-[60%] hidden lg:block md:block ' >
+
+<h3 className='text-[5rem] md:text-[3rem] font-bold leading-[90px]
+ lg:mb-[1rem] text-slate-100 mt-[2rem]'>
+
+
+BOAT Rockerz 370
+</h3>
+<div className=' text-slate-100 '>wireless preminum noise cancellation</div>
+<div className=' text-slate-100  lg:mb-[1rem]'> Welcome to <span className='text-rose-400 text-[20px]'>Soundify</span> 
+ Where Every Beat Counts! Immerse Yourself in Pure Audio Bliss with Our Premium Headphones.
+</div>
+<span className='flex space-x-10 mb-[4rem]'>
+<button className=' w-[60%] bg-red-600 text-slate-100 hover:bg-transparent hover:border hover:border-red-500 delay-200 py-3 rounded-[10px] mt-4'> Shop now</button>
+<button className='w-[60%] border-red-500 border hover:bg-red-500 delay-100 text-slate-100 py-3 rounded-[10px] mt-4'> Explore now</button>
+</span>
+
+  
+   
+    </div>
+</section>
+  </section>
+
+
+
+https://demo.codezeel.com/opencart/OPC05/OPC050106/image/catalog/cms-banner-3.jpg
+https://demo.codezeel.com/opencart/OPC05/OPC050106/image/catalog/cms-banner-2.jpg
+https://demo.codezeel.com/opencart/OPC05/OPC050106/image/catalog/cms-banner-1.jpg
