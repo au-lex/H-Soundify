@@ -9,6 +9,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { Link } from 'react-router-dom';
+
 
 const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity }) => {
 
@@ -67,10 +69,20 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
  
 <ol className=' text-slate-200  px-4 space-x-14 md:space-x-8 hidden lg:flex md:flex '>
-  <li className='mb-[1rem] py-2'>Home</li>
+<li className='mb-[1rem] py-2'>
+    
+      </li>
+  <li  className='mb-[1rem] py-2'>Home</li>
+
   <li className='mb-[1rem] py-2 '>Product</li>
+  <Link to='/abt' >
+    
   <li className='mb-[1rem] py-2 '>About us</li>
-  <li className='mb-[1rem] py-2 '>Contact us</li>
+    </Link>
+    <Link to='/Contact' >
+    
+    <li className='mb-[1rem] py-2 '>Contact us</li>
+      </Link>
 </ol>
 <span className='flex space-x-4 text-slate-100'> 
 
@@ -98,9 +110,17 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
 <ol className=' pt-[3rem] text-slate-200 text-center px-4 '>
   <li className='mb-[1rem] py-2 border'>Home</li>
-  <li className='mb-[1rem] py-2 border'>Product</li>
-  <li className='mb-[1rem] py-2 border'>About us</li>
-  <li className='mb-[1rem] py-2 border'>Contact us</li>
+  <Link to='/abt' >
+    
+    <li className='mb-[1rem] py-2 border '>About us</li>
+      </Link>
+
+      <Link to='/Contact' >
+    
+    <li className='mb-[1rem] py-2 border '>Contact us</li>
+      </Link>
+
+  
 </ol>
 
 
@@ -108,6 +128,9 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 </div>
 
 {isCartOpen && (
+  <>
+<div className='fixed top-0 left-0 w-full h-full bg-black opacity-80 z-40'></div>
+
         <div
           className="bg-white min-h-[20rem] top-[4rem]   z-50 px-6 w-full fixed mb-[5rem] 
           act"
@@ -181,6 +204,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
     </div>
 
         </div>
+        </>
       )}
 
 

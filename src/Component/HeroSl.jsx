@@ -117,14 +117,14 @@ const HeroSl = () => {
           <img
             src="https://demo.codezeel.com/opencart/OPC05/OPC050106/image/cache/catalog/main-banner-1-1903x1009.jpg"
             alt=""
-            className="w-[600px] h-[250px] object-cover"
+            className="w-[600px] h-[260px] object-cover"
           />
         </div>
         <div className="">
           <img
             src="https://demo.codezeel.com/opencart/OPC05/OPC050106/image/cache/catalog/main-banner-2-1903x1009.jpg"
             alt=""
-            className='w-[600px] h-[250px] object-cover'
+            className='w-[600px] h-[260px] object-cover'
           />
         </div>
 
@@ -132,16 +132,7 @@ const HeroSl = () => {
         
       </Slider>
     </div>
-{/* 
-   <div className='mt-[4rem] relative'>
-      <img
-        src="https://demo.codezeel.com/opencart/OPC05/OPC050106/image/cache/catalog/main-banner-1-1903x1009.jpg"
-       
-        alt=""
-        className="w-full h-full object-cover"
-      />
 
-    </div> */}
 
     <div className=' px-[0rem]  mt-8 lg:my-[2rem] overflow-x-hidden hidden'>
 
