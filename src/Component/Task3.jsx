@@ -31,7 +31,7 @@ const Task3 = ({ product, addToCart }) => {
   return (
     <div>
       
-      <main className=' lg:px-[4rem]'>
+      <main className=' lg:px-[4rem]' id='Product'>
       <header className="text-center py-8 px-[1rem]">
       <h1 className="text-2xl font-bold relative inline-block">
         <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
