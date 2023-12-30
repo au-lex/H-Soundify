@@ -6,20 +6,27 @@ import 'aos/dist/aos.css';
 import Task4 from '../Component/Task4';
 import { IoArrowBackCircleSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { FaHeadphonesAlt } from "react-icons/fa";
 
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true,
+      once: false,
     });
   }, []);
 
   return (
-    <section className="px-2 bg-gray-900 font-normal pt-4 text-white">
+    <section className="px-4 bg-gray-900 font-normal pt-4 text-white">
+        <div className='flex justify-between'>
+
         <Link to={'/'}>
         <IoArrowBackCircleSharp className='text-[2rem]' />
         </Link>
+<div className="logo flex  text-rose-100 text-[1.5rem] font-bold"><span> <FaHeadphonesAlt className='text-[2rem]
+ text-red-600 mr-4' /></span>Soundify</div>
+      
+ </div>
       <div className="container mx-auto flex flex-col items-center">
         <h2 className="text-2xl mt-6 font-bold mb-8 text-center" data-aos="fade-up">
           Welcome to Soundify
