@@ -17,7 +17,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="px-4 bg-gray-900 font-normal pt-4 text-white">
+    <section className="px-4 bg-gray-900 font-normal pt-4 overflow-x-hidden text-white">
         <div className='flex justify-between'>
 
         <Link to={'/'}>
@@ -28,7 +28,7 @@ const AboutUs = () => {
       
  </div>
       <div className="container mx-auto flex flex-col items-center">
-        <h2 className="text-2xl mt-6 font-bold mb-8 text-center" data-aos="fade-up">
+        <h2 className="text-xl mt-6 font-bold mb-8 text-center" data-aos="fade-up">
           Welcome to Soundify
         </h2>
         <div className="flex flex-col-reverse lg:flex-row lg:items-center">
