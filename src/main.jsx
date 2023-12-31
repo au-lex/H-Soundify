@@ -10,6 +10,7 @@ import './index.css'
 // import FoodMenu from './Components/Pages/FoodMenu.jsx';
 import About from './Pages/About.jsx';
 import Contact from './/Pages/Contact.jsx';
+// import Checkout from './Pages/Checkout.jsx';
 
 const router = createBrowserRouter([
 
@@ -24,20 +25,18 @@ const router = createBrowserRouter([
     element: <About />,
   },
 
-  // {
-  //   path: "/Menu",
-  //   element: <FoodMenu />,
-  // },
-
-  // {
-  //   path: "/Abt",
-  //   element: <About />
-  // },
+  
 
   {
     path: "/Contact",
     element: <Contact/>,
   },
+
+  
+  // {
+  //   path: "/Check",
+  //   element: <Checkout />,
+  // },
 ])
 
 
