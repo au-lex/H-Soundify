@@ -74,7 +74,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
       </li>
   <li  className='mb-[1rem] py-2'>Home</li>
 
-  <li className='mb-[1rem] py-2 '>Product</li>
+  {/* <li className='mb-[1rem] py-2 '>About us</li> */}
   <Link to='/abt' >
     
   <li className='mb-[1rem] py-2 '>About us</li>
