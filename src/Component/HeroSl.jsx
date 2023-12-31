@@ -28,7 +28,7 @@ const HeroSl = () => {
     slidesToScroll: 3,
     initialSlide: 0,
  autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   pauseOnHover: false,
   
    
@@ -74,6 +74,23 @@ const HeroSl = () => {
             className="w-full h-full object-cover"
           />
         </div>
+        <div className="h-screen">
+          <img
+            src="https://demo.codezeel.com/opencart/OPC05/OPC050106/image/cache/catalog/main-banner-2-1903x1009.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+
+        <div className="h-screen">
+          <img
+            src="https://demo.codezeel.com/opencart/OPC05/OPC050106/image/cache/catalog/main-banner-1-1903x1009.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         <div className="h-screen">
           <img
             src="https://demo.codezeel.com/opencart/OPC05/OPC050106/image/cache/catalog/main-banner-2-1903x1009.jpg"

@@ -109,7 +109,7 @@ text-red-600 mr-4' /></span>Soundify</div>
           <button
             type="submit"
             className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 focus:outline-none w-full"
-            data-aos="fade-up"
+          
           >
             Submit
           </button>

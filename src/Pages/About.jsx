@@ -56,10 +56,11 @@ text-red-600 mr-4' /></span>Soundify</div>
 
        
       </div>
-      <div className="container mx-auto flex flex-col items-center">
-        <h2 className="text-xl mt-6 font-bold mb-8 text-center" data-aos="fade-up">
+      <h2 className="text-xl mt-6 font-bold mb-8 " data-aos="fade-up">
           Welcome to Soundify
         </h2>
+      <div className="container mx-auto flex flex-col items-center">
+       
         <div className="flex flex-col-reverse lg:flex-row lg:items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0" data-aos="fade-right">
             <img

@@ -129,7 +129,7 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
 
 {isCartOpen && (
   <>
-<div className='fixed top-0 left-0 w-full h-full bg-black opacity-80 z-40'></div>
+<div className='fixed top-0 left-0 w-full h-full bg-white  z-40'></div>
 
         <div
           className="bg-white min-h-[20rem] top-[4rem]   z-50 px-6 w-full fixed mb-[5rem] 
@@ -189,10 +189,12 @@ const Task1 = ({cart, total,  removeFromCart,increaseQuantity, decreaseQuantity 
         <p className="text-lg font-bold mt-4">Total: ${total.toFixed(2)}</p>
 
       )}
-       <div className="btnn pb-[2rem]">
+       <div className="btnn pb-[2rem]"> 
+       <Link to='/Check'>
   <button className="bg-orange-500 rounded-[10px] text-white w-full p-3 transition duration-300 ease-in-out hover:bg-orange-700">
     Checkout
   </button>
+       </Link>
 </div>
 
         </ul>

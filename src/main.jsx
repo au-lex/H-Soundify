@@ -7,10 +7,11 @@ import {
 import App from './App.jsx'
 import './index.css'
 
-// import FoodMenu from './Components/Pages/FoodMenu.jsx';
+
 import About from './Pages/About.jsx';
 import Contact from './/Pages/Contact.jsx';
-// import Checkout from './Pages/Checkout.jsx';
+import Checkout from './Pages/Checkout.jsx';
+
 
 const router = createBrowserRouter([
 
@@ -33,10 +34,10 @@ const router = createBrowserRouter([
   },
 
   
-  // {
-  //   path: "/Check",
-  //   element: <Checkout />,
-  // },
+  {
+    path: "/Check",
+    element: <Checkout />,
+  },
 ])
 
 
